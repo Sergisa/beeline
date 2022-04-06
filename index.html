@@ -4,37 +4,103 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkbox.css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        #GIT a:before {
+            mask-image: url("Shaperocket.svg");
+        }
+
+        #JavaScript a:before {
+            mask-image: url("Fill 1JS.svg");
+        }
+
+        #Angular a:before {
+            mask-image: url("Combined Shapematrix.svg");
+        }
+
+        #Data a:before {
+            mask-image: url("Combined Shapeball.svg");
+        }
+
+        #React a:before {
+            mask-image: url("Tower.svg");
+        }
+
+        #html-css a:before {
+            mask-image: url("sward.svg");
+        }
+    </style>
 </head>
 <body>
-<div class="main-wrapper">
-    <div class="left-bar">
-        <div class="left-bar__header">
-            Расписание
+<div class="left-bar">
+    <div class="left-bar__header">
+        Расписание
+    </div>
+    <ul class="menu-list">
+        <li class="menu-list-item menu-list-group-item">
+            <input type="checkbox" name="lectures" id="program">
+            <label for="program" class="menu-list-subgroup-label">
+                Программа
+            </label>
+        </li>
+        <li class="menu-list-item"><a href="#">Менторы</a></li>
+        <li class="menu-list-item menu-list-group-item">
+            <input type="checkbox" name="lectures" id="lectures">
+            <label for="lectures" class="menu-list-subgroup-label">
+                Лекции
+            </label>
+
+            <ul class="menu-list__subgroup-container">
+                <li class="menu-list-item active" id="html-css"><a href="#">HTML/CSS</a></li>
+                <li class="menu-list-item" id="GIT"><a href="#">GIT</a></li>
+                <li class="menu-list-item" id="JavaScript"><a href="#">JavaScript</a></li>
+                <li class="menu-list-item" id="React"><a href="#">React</a></li>
+                <li class="menu-list-item" id="Angular"><a href="#">Angular</a></li>
+                <li class="menu-list-item" id="Data"><a href="#">Data</a></li>
+            </ul>
+
+        </li>
+        <li class="menu-list-item"><a href="#">Правила поступления</a></li>
+        <li class="menu-list-item"><a href="#">Новости</a></li>
+        <li class="menu-list-item"><a href="#">Обратная связь</a></li>
+    </ul>
+    <div class="switch">
+        <span>Получать рассылку</span>
+        <label class="checkbox-toggle" for="subscribe">
+            <input type="checkbox" name="subscribe" id="subscribe">
+            <span class="checkbox-switch"></span>
+        </label>
+    </div>
+</div>
+<div class="main-content">
+    <div class="section" id="first-section">
+        <div class="pre-header"></div>
+        <div class="header"></div>
+        <div class="content">
+            <div class="card">
+                <span class="card-label">Лекция</span>
+                <div class="card-image">
+                    <img src="maik-jonietz-_yMciiStJyY-unsplash.png">
+                </div>
+                <div class="card-content">
+                    <div class="card-content__title">
+                        Структура HTML
+                    </div>
+                    <div class="card-content__description">Назначение блоков: head, body</div>
+                </div>
+                <div class="card-footer">
+                    <span class="date">01.02.2022</span>
+                    <button class="main-action-button">Смотреть</button>
+                </div>
+            </div>
+
         </div>
-        <ul class="menu-list">
-            <li class="menu-list-item menu-list-group-item">Программа</li>
-            <li class="menu-list-item">Менторы</li>
-            <li class="menu-list-item menu-list-group-item">
-                <label for="lectures" class="menu-list-subgroup-label">
-                    Лекции
-                </label>
-                <input type="checkbox" name="lectures" id="lectures">
-
-                <ul class="menu-list__subgroup-container">
-                    <li class="menu-list-item active">HTML/CSS</li>
-                    <li class="menu-list-item">GIT</li>
-                    <li class="menu-list-item">JavaScript</li>
-                    <li class="menu-list-item">React</li>
-                    <li class="menu-list-item">Angular</li>
-                    <li class="menu-list-item">Data</li>
-                    <li class="menu-list-item">Data</li>
-                </ul>
-
-            </li>
-            <li class="menu-list-item">Правила поступления</li>
-            <li class="menu-list-item">Новости</li>
-            <li class="menu-list-item">Обратная связь</li>
-        </ul>
+    </div>
+    <div class="section" id="second-section">
+        <div class="pre-header"></div>
+        <div class="header"></div>
+        <div class="content"></div>
     </div>
 </div>
 
