@@ -31,8 +31,6 @@
     border-radius: 6px;
     background: rgba(255, 255, 255, 4%);
     display: inline-block;
-    margin-right: 11px;
-    margin-top: 11px;
     width: 255px;
 }
 
@@ -116,12 +114,17 @@
 }
 
 .cta {
+    padding-left: 12px;
+    padding-right: 12px;
     background: linear-gradient(90deg, #6B69F9 0%, #6F6EFF 100%);
     color: white;
     border-radius: 4px;
     font-weight: 400;
     font-size: 12px;
     line-height: 17px;
+    border: 1px solid #6F6EFF;
+    height: 30px;
+    cursor: pointer;
 }
 
 .header__right-side button.prev-button:hover,
@@ -133,19 +136,14 @@
 .header__right-side button.next-button {
     border: 1px solid rgba(255, 255, 255, 15%);
     border-radius: 4px;
-    padding: 10px 12px;
+    height: 30px;
+    width: 30px;
     background-color: transparent;
     margin-left: 10px;
     cursor: pointer;
 }
+.section__content{
+    display: flex;
+    justify-content: space-between;
 
-.cta {
-    padding: 10px 12px;
-    background: linear-gradient(90deg, #6B69F9 0%, #6F6EFF 100%);
-    color: white;
-    border-radius: 4px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 17px;
-    border: 1px solid #6F6EFF;
 }
