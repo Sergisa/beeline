@@ -6,6 +6,7 @@
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.01%) 0%, rgba(255, 255, 255, 10%) 100%);
     mix-blend-mode: normal;
     height: 100%;
+    display: flow-root;
 }
 
 .section .card .card__label {
@@ -80,7 +81,6 @@
 }
 
 .section {
-    margin-top: 41px;
     margin-bottom: 60px;
 }
 

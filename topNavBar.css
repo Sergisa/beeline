@@ -1,5 +1,66 @@
-.header{
+.nav-bar {
     height: 66px;
     border-bottom: 1px solid rgba(216, 216, 216, 0.1);
-    margin-left: 280px;
+    padding-left: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar__left-side.nav:after {
+    content: '';
+    height: 24px;
+    width: 1px;
+    background-color: rgba(216, 216, 216, 0.1);
+    display: block;
+    right: 0;
+    position: relative;
+    top: 0;
+
+}
+.nav-bar__left-side {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 10px;
+    display: flex;
+}
+.nav-bar__left-side.nav li {
+    padding: 30px 14px;
+}
+
+.nav-bar__left-side.nav {
+    list-style: none;
+    color: white;
+    display: flex;
+    margin: 0;
+    padding-left: 55px;
+    align-items: center;
+}
+.nav-bar__right-side .badge{
+    color: white;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 10px;
+    padding: 7px 9px;
+    background: rgba(255, 255, 255, 0.06);
+    mix-blend-mode: normal;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.nav-bar__right-side{
+    display: flex;
+}
+.badge.hours:before{
+    content: '';
+    display: block;
+        background: #FF4738 url("flash.svg") no-repeat center;
+    box-shadow: 0 0 12px rgba(255, 71, 56, 0.5);
+    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
 }
