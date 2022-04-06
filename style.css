@@ -3,7 +3,9 @@
 body {
     background-color: #2B2C3A;
     font-family: 'Jost', sans-serif;
-
+    padding: 0;
+    margin: 0;
+    height: 100%;
 }
 
 .left-bar__header {
