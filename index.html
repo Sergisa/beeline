@@ -4,39 +4,263 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkbox.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="topNavBar.css">
+    <style>
+        #GIT a:before {
+            mask-image: url("Shaperocket.svg");
+        }
+
+        #JavaScript a:before {
+            mask-image: url("Fill 1JS.svg");
+        }
+
+        #Angular a:before {
+            mask-image: url("Combined Shapematrix.svg");
+        }
+
+        #Data a:before {
+            mask-image: url("Combined Shapeball.svg");
+        }
+
+        #React a:before {
+            mask-image: url("Tower.svg");
+        }
+
+        #html-css a:before {
+            mask-image: url("sward.svg");
+        }
+    </style>
 </head>
 <body>
-<div class="main-wrapper">
-    <div class="left-bar">
-        <div class="left-bar__header">
-            Расписание
-        </div>
-        <ul class="menu-list">
-            <li class="menu-list-item menu-list-group-item">Программа</li>
-            <li class="menu-list-item">Менторы</li>
-            <li class="menu-list-item menu-list-group-item">
-                <label for="lectures" class="menu-list-subgroup-label">
-                    Лекции
-                </label>
-                <input type="checkbox" name="lectures" id="lectures">
-
-                <ul class="menu-list__subgroup-container">
-                    <li class="menu-list-item active">HTML/CSS</li>
-                    <li class="menu-list-item">GIT</li>
-                    <li class="menu-list-item">JavaScript</li>
-                    <li class="menu-list-item">React</li>
-                    <li class="menu-list-item">Angular</li>
-                    <li class="menu-list-item">Data</li>
-                    <li class="menu-list-item">Data</li>
-                </ul>
-
-            </li>
-            <li class="menu-list-item">Правила поступления</li>
-            <li class="menu-list-item">Новости</li>
-            <li class="menu-list-item">Обратная связь</li>
-        </ul>
+<div class="nav-bar">
+    <ul class="nav nav-bar__left-side">
+        <li>FAQ</li>
+        <li>Поддержка</li>
+        <li>Настройки</li>
+    </ul>
+    <div class="nav-bar__right-side">
+        <div class="badge">15 готовых дз</div>
+        <div class="badge">18 лекций</div>
+        <div class="badge hours"> <b>1200 </b> часов</div>
     </div>
 </div>
+<div class="left-bar">
+    <div class="left-bar__header">
+        Расписание
+    </div>
+    <ul class="menu-list">
+        <li class="menu-list-item menu-list-group-item">
+            <input type="checkbox" name="lectures" id="program">
+            <label for="program" class="menu-list-subgroup-label">
+                Программа
+            </label>
+        </li>
+        <li class="menu-list-item"><a href="#">Менторы</a></li>
+        <li class="menu-list-item menu-list-group-item">
+            <input type="checkbox" name="lectures" id="lectures">
+            <label for="lectures" class="menu-list-subgroup-label">
+                Лекции
+            </label>
 
+            <ul class="menu-list__subgroup-container">
+                <li class="menu-list-item active" id="html-css"><a href="#">HTML/CSS</a></li>
+                <li class="menu-list-item" id="GIT"><a href="#">GIT</a></li>
+                <li class="menu-list-item" id="JavaScript"><a href="#">JavaScript</a></li>
+                <li class="menu-list-item" id="React"><a href="#">React</a></li>
+                <li class="menu-list-item" id="Angular"><a href="#">Angular</a></li>
+                <li class="menu-list-item" id="Data"><a href="#">Data</a></li>
+            </ul>
+
+        </li>
+        <li class="menu-list-item"><a href="#">Правила поступления</a></li>
+        <li class="menu-list-item"><a href="#">Новости</a></li>
+        <li class="menu-list-item"><a href="#">Обратная связь</a></li>
+    </ul>
+    <div class="switch">
+        <span>Получать рассылку</span>
+        <label class="checkbox-toggle" for="subscribe">
+            <input type="checkbox" name="subscribe" id="subscribe">
+            <span class="checkbox-switch"></span>
+        </label>
+    </div>
+</div>
+<div class="main-content">
+    <div class="section" id="first-section">
+        <div class="header__top-block">
+            <div class="header__left-side">
+                <div class="section__pre-header">Базовый уровень</div>
+                <div class="section__header">HTML/CSS</div>
+            </div>
+            <div class="header__right-side">
+                <button class="all-lectures cta">Все лекции</button>
+                <button type="button" class="prev-button">
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 8.82979L4.87606 10L0 4.9232L4.72854 0L5.77219 1.08662L2.1676 4.83961L6 8.82979Z" fill="white"/>
+                    </svg>
+                </button>
+                <button type="button" class="next-button">
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 8.82979L3.8324 4.83961L0.227807 1.08662L1.27146 0L6 4.9232L1.12394 10L0 8.82979Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="section__content">
+            <div class="card">
+                <span class="card__label">Лекция</span>
+                <div class="card__image">
+                    <img src="maik-jonietz-_yMciiStJyY-unsplash.png" alt="card image">
+                </div>
+                <div class="card__content">
+                    <div class="card-content__title">
+                        Структура HTML
+                    </div>
+                    <div class="card__content__description">Назначение блоков: head, body</div>
+                </div>
+                <div class="card-footer">
+                    <span class="card-footer__date">01.02.2022</span>
+                    <button class="cta">Смотреть</button>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card__label">Лекция</span>
+                <div class="card__image">
+                    <img src="maik-jonietz-_yMciiStJyY-unsplash.png" alt="card image">
+                </div>
+                <div class="card__content">
+                    <div class="card-content__title">
+                        Подключение стилей
+                    </div>
+                    <div class="card__content__description">Виды подключения стилей. Подключение шрифтов</div>
+                </div>
+                <div class="card-footer">
+                    <span class="card-footer__date">01.02.2022</span>
+                    <button class="cta">Смотреть</button>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card__label">Лекция</span>
+                <div class="card__image">
+                    <img src="maik-jonietz-_yMciiStJyY-unsplash.png" alt="card image">
+                </div>
+                <div class="card__content">
+                    <div class="card-content__title">
+                        CSS
+                    </div>
+                    <div class="card__content__description">Базовый синтаксис CSS: селекторы, классы</div>
+                </div>
+                <div class="card-footer">
+                    <span class="card-footer__date">01.02.2022</span>
+                    <button class="cta">Смотреть</button>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card__label">Лекция</span>
+                <div class="card__image">
+                    <img src="maik-jonietz-_yMciiStJyY-unsplash.png" alt="card image">
+                </div>
+                <div class="card__content">
+                    <div class="card-content__title">
+                        Наследие и каскад
+                    </div>
+                    <div class="card__content__description">Наследие и каскад</div>
+                </div>
+                <div class="card-footer">
+                    <span class="card-footer__date">01.02.2022</span>
+                    <button class="cta">Смотреть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="second-section">
+        <div class="header__top-block">
+            <div class="header__left-side">
+                <div class="section__pre-header">продвинутый уровень</div>
+                <div class="section__header">HTML/CSS</div>
+            </div>
+            <div class="header__right-side">
+                <button class="all-lectures cta">Все лекции</button>
+                <button type="button" class="prev-button">
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 8.82979L4.87606 10L0 4.9232L4.72854 0L5.77219 1.08662L2.1676 4.83961L6 8.82979Z" fill="white"/>
+                    </svg>
+                </button>
+                <button type="button" class="next-button">
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 8.82979L3.8324 4.83961L0.227807 1.08662L1.27146 0L6 4.9232L1.12394 10L0 8.82979Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="section__content">
+            <div class="card">
+                <span class="card__label">Лекция</span>
+                <div class="card__image">
+                    <img src="maik-jonietz-_yMciiStJyY-unsplash.png" alt="card image">
+                </div>
+                <div class="card__content">
+                    <div class="card-content__title">
+                        HTML-формы
+                    </div>
+                    <div class="card__content__description">HTML-формы</div>
+                </div>
+                <div class="card-footer">
+                    <span class="card-footer__date">01.02.2022</span>
+                    <button class="cta">Смотреть</button>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card__label">Лекция</span>
+                <div class="card__image">
+                    <img src="maik-jonietz-_yMciiStJyY-unsplash.png" alt="card image">
+                </div>
+                <div class="card__content">
+                    <div class="card-content__title">
+                        Flex
+                    </div>
+                    <div class="card__content__description">Принципы современной верстки сайта на flex</div>
+                </div>
+                <div class="card-footer">
+                    <span class="card-footer__date">01.02.2022</span>
+                    <button class="cta">Смотреть</button>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card__label">Лекция</span>
+                <div class="card__image">
+                    <img src="maik-jonietz-_yMciiStJyY-unsplash.png" alt="card image">
+                </div>
+                <div class="card__content">
+                    <div class="card-content__title">
+                        Media и viewport
+                    </div>
+                    <div class="card__content__description">Адаптивная верстка. Использование media и viewport</div>
+                </div>
+                <div class="card-footer">
+                    <span class="card-footer__date">01.02.2022</span>
+                    <button class="cta">Смотреть</button>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card__label">Лекция</span>
+                <div class="card__image">
+                    <img src="maik-jonietz-_yMciiStJyY-unsplash.png" alt="card image">
+                </div>
+                <div class="card__content">
+                    <div class="card-content__title">
+                        CSS Grid
+                    </div>
+                    <div class="card__content__description">CSS Grid</div>
+                </div>
+                <div class="card-footer">
+                    <span class="card-footer__date">01.02.2022</span>
+                    <button class="cta">Смотреть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
