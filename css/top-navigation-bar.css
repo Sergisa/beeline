@@ -82,7 +82,7 @@
 .badge.hours:before {
     content: '';
     display: block;
-    background: #FF4738 url("flash.svg") no-repeat center;
+    background: #FF4738 url("../images/flash.svg") no-repeat center;
     box-shadow: 0 0 12px rgba(255, 71, 56, 0.5);
     border-radius: 4px;
     width: 18px;

@@ -50,7 +50,7 @@
 
 .menu-list-group-item label:after {
     content: '';
-    background: url("arrow.svg") no-repeat center;
+    background: url("../images/arrow.svg") no-repeat center;
     display: block;
     width: 10px;
     height: 10px;
@@ -149,7 +149,7 @@ input[type="checkbox"]:checked ~ .menu-list__subgroup-container {
 }
 
 .menu-list-group-item input[type="checkbox"]:checked ~ label:after {
-    background: url("arrow.svg") no-repeat center;
+    background: url("../images/arrow.svg") no-repeat center;
     transform: rotate(180deg);
 }
 
