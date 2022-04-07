@@ -1,0 +1,33 @@
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 768px) {
+    .left-bar {
+        display: none;
+    }
+    .main-content{
+        margin-left: 0;
+    }
+    .nav-bar__container{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .left-bar {
+
+    }
+}
+
+@media (max-width: 1200px) {
+    .left-bar {
+
+    }
+}
+
+@media (max-width: 1400px) {
+    .left-bar {
+
+    }
+}
