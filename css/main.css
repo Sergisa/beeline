@@ -46,6 +46,8 @@ body {
     background: rgba(255, 255, 255, 4%);
     display: inline-block;
     width: 255px;
+    margin-right: 11px;
+    margin-bottom: 11px;
 }
 
 .card__content {
@@ -124,7 +126,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
-
+    flex-flow: wrap;
 }
 
 .cta {
@@ -159,6 +161,5 @@ body {
 
 .section__content {
     display: flex;
-    justify-content: space-between;
-
+    flex-flow: wrap;
 }
