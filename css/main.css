@@ -129,6 +129,14 @@ body {
     flex-flow: wrap;
 }
 
+.cta:hover {
+    filter: brightness(80%);
+}
+
+.cta:active {
+    filter: brightness(50%);
+}
+
 .cta {
     padding-left: 12px;
     padding-right: 12px;
