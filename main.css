@@ -9,12 +9,15 @@
     display: flow-root;
 }
 
+.section .card .card__label.lecture {
+    background-color: #6F6EFF;
+}
+
 .section .card .card__label {
     position: absolute;
     top: 15px;
     left: 15px;
     border-radius: 3px;
-    background-color: #6F6EFF;
     padding: 4px 6px;
     font-weight: 400;
     font-size: 12px;
