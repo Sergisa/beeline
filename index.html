@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="checkbox.css">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="topNavBar.css">
+    <link rel="stylesheet" href="left-navigation-menu.css">
+    <link rel="stylesheet" href="checkbox.css">
+    <link rel="stylesheet" href="top-navigation-bar.css">
     <style>
         #GIT a:before {
             mask-image: url("Rocket.svg");
@@ -51,8 +51,25 @@
         <div class="nav-bar__right-side">
             <div class="badge">15 готовых дз</div>
             <div class="badge">18 лекций</div>
-            <div class="badge hours"> <b>1200 </b> часов</div>
+            <div class="badge hours"><b>1200 </b> часов</div>
+            <div class="profile">
+                <img class="profile__avatar" src="mulyadi-kL4coQHVj_A-unsplashavatar.png" alt="Avatar">
+                <div>
+                    <div>
+                        <div class="profile__user-name">
+                            Вася Пупкин
+                        </div>
+                        <div class="profile__status">
+                            Online
+                        </div>
+                    </div>
+                    <div class="profile__level">
+                        PRO
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
 </div>
 <div class="left-bar">
@@ -60,32 +77,32 @@
         Расписание
     </div>
     <ul class="menu-list">
-        <li class="menu-list-item menu-list-group-item">
+        <li class="menu-list-group-item">
             <input type="checkbox" name="lectures" id="program">
-            <label for="program" class="menu-list-subgroup-label">
+            <label for="program" class="menu-item-sign-label">
                 Программа
             </label>
         </li>
-        <li class="menu-list-item"><a href="#">Менторы</a></li>
-        <li class="menu-list-item menu-list-group-item">
+        <li class="menu-item-sign-label"><a href="#">Менторы</a></li>
+        <li class="menu-list-group-item">
             <input type="checkbox" name="lectures" id="lectures">
-            <label for="lectures" class="menu-list-subgroup-label">
+            <label for="lectures" class="menu-item-sign-label">
                 Лекции
             </label>
 
             <ul class="menu-list__subgroup-container">
-                <li class="menu-list-item active" id="html-css"><a href="#">HTML/CSS</a></li>
-                <li class="menu-list-item" id="GIT"><a href="#">GIT</a></li>
-                <li class="menu-list-item" id="JavaScript"><a href="#">JavaScript</a></li>
-                <li class="menu-list-item" id="React"><a href="#">React</a></li>
-                <li class="menu-list-item" id="Angular"><a href="#">Angular</a></li>
-                <li class="menu-list-item" id="Data"><a href="#">Data</a></li>
+                <li class="menu-item-sign-label active" id="html-css"><a href="#">HTML/CSS</a></li>
+                <li class="menu-item-sign-label" id="GIT"><a href="#">GIT</a></li>
+                <li class="menu-item-sign-label" id="JavaScript"><a href="#">JavaScript</a></li>
+                <li class="menu-item-sign-label" id="React"><a href="#">React</a></li>
+                <li class="menu-item-sign-label" id="Angular"><a href="#">Angular</a></li>
+                <li class="menu-item-sign-label" id="Data"><a href="#">Data</a></li>
             </ul>
 
         </li>
-        <li class="menu-list-item"><a href="#">Правила поступления</a></li>
-        <li class="menu-list-item"><a href="#">Новости</a></li>
-        <li class="menu-list-item"><a href="#">Обратная связь</a></li>
+        <li class="menu-item-sign-label"><a href="#">Правила поступления</a></li>
+        <li class="menu-item-sign-label"><a href="#">Новости</a></li>
+        <li class="menu-item-sign-label"><a href="#">Обратная связь</a></li>
     </ul>
     <div class="switch">
         <span>Получать рассылку</span>
@@ -106,12 +123,14 @@
                 <button class="all-lectures cta">Все лекции</button>
                 <button type="button" class="prev-button">
                     <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 8.82979L4.87606 10L0 4.9232L4.72854 0L5.77219 1.08662L2.1676 4.83961L6 8.82979Z" fill="white"/>
+                        <path d="M6 8.82979L4.87606 10L0 4.9232L4.72854 0L5.77219 1.08662L2.1676 4.83961L6 8.82979Z"
+                              fill="white"/>
                     </svg>
                 </button>
                 <button type="button" class="next-button">
                     <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 8.82979L3.8324 4.83961L0.227807 1.08662L1.27146 0L6 4.9232L1.12394 10L0 8.82979Z" fill="white"/>
+                        <path d="M0 8.82979L3.8324 4.83961L0.227807 1.08662L1.27146 0L6 4.9232L1.12394 10L0 8.82979Z"
+                              fill="white"/>
                     </svg>
                 </button>
             </div>
@@ -193,12 +212,14 @@
                 <button class="all-lectures cta">Все лекции</button>
                 <button type="button" class="prev-button">
                     <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 8.82979L4.87606 10L0 4.9232L4.72854 0L5.77219 1.08662L2.1676 4.83961L6 8.82979Z" fill="white"/>
+                        <path d="M6 8.82979L4.87606 10L0 4.9232L4.72854 0L5.77219 1.08662L2.1676 4.83961L6 8.82979Z"
+                              fill="white"/>
                     </svg>
                 </button>
                 <button type="button" class="next-button">
                     <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 8.82979L3.8324 4.83961L0.227807 1.08662L1.27146 0L6 4.9232L1.12394 10L0 8.82979Z" fill="white"/>
+                        <path d="M0 8.82979L3.8324 4.83961L0.227807 1.08662L1.27146 0L6 4.9232L1.12394 10L0 8.82979Z"
+                              fill="white"/>
                     </svg>
                 </button>
             </div>

@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #2B2C3A;
-
+    padding-right: 45px;
 }
 
 .nav-bar {
@@ -71,10 +71,12 @@
     margin-right: 10px;
     display: flex;
     align-items: center;
+    max-height: 24px;
 }
 
 .nav-bar__right-side {
     display: flex;
+    align-items: center;
 }
 
 .badge.hours:before {
@@ -86,4 +88,62 @@
     width: 18px;
     height: 18px;
     margin-right: 10px;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile__level {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 10px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    background: linear-gradient(90deg, #6B69F9 0%, #6F6EFF 100%);
+    box-shadow: 0 0 12px rgba(111, 110, 255, 0.5);
+    border-radius: 4px;
+    margin-left: 15px;
+
+}
+
+.profile__status::marker {
+
+}
+
+.profile__status {
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 10px;
+    color: #24CB8D;
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.profile__user-name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 10px;
+    color: white;
+    margin-bottom: 9px;
+}
+
+.profile__avatar {
+
+}
+
+.profile > div > div {
+    display: inline-block;
+}
+
+.profile > div {
+    display: flex;
+    align-items: start;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    margin-left: 13px;
 }

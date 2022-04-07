@@ -1,4 +1,3 @@
-
 .checkbox-toggle .checkbox-switch {
     display: flex;
     align-items: center;
@@ -16,7 +15,7 @@
     width: 20px;
     height: 20px;
     position: relative;
-    left: 2px;
+    left: 1px;
     background: rgba(255, 255, 255, 20%);
     border-radius: 50%;
     transition: .15s;
@@ -37,13 +36,14 @@
 
 .checkbox-toggle input[type=checkbox]:checked + .checkbox-switch:before {
     background: #6F6EFF;
-    transform: translateX(18px);
+    transform: translateX(20px);
+    box-shadow: 0 0 12px rgba(111, 110, 255, 0.5);
 }
 
 /* Hover */
 .checkbox-toggle input[type="checkbox"]:not(:disabled) + .checkbox-switch {
     cursor: pointer;
-    border-color: rgba(255,255,255, 20%);
+    border-color: rgba(255, 255, 255, 20%);
 }
 
 
